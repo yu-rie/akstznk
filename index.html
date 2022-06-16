@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>あきすとぜねこ</title>
+  <meta name="description" content="文字を数字に変換するといえば、あきすとぜねこ！" />
+  <meta name="keywords" content="n予備校, あきすとぜねこ, 高学年, プログラミング" />
+</head>
+
+<body>
+  <article>
+    <header>
+      <hgroup>
+        <h1 class="title">あきすとぜねこ</h1>
+        <h3 class="subtitle">こう学年ばん</h3>
+      </hgroup>
+    </header>
+    <p>名まえをすう字におきかえて、あいしょうをうらないます。</p>
+    <section>
+      <p class="kaisetu">
+        けっかは<br><br>
+      <span>あ</span>いしてる <span>き</span>らい　<span>す</span>き　<span>と</span>もだち　<span>ぜ</span>っこう　<span>ね</span>つあい <span>こ</span>い人<br>
+      <br>
+      の ほかに 「うんめいの人」 が あります。
+      </p>
+    </section>
+    <section>
+      <header>
+        <p class="table">ひらがなで名まえを入れてね</p>
+      </header>
+      <div class="container bg2 inv">
+        <div class="step"></div>
+        <div class="box head">
+          <div class="watashi">わたし</div>
+          <div class="aite">あい手</div>
+        </div>
+      </div>
+      <div class="container bg2">
+        <div class="step">名まえ</div>
+        <div class="box">
+          <div class="watashi">
+            <input type="text" id="my-name">
+          </div>
+          <div class="aite">
+            <input type="text" id="your-name">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="step">すう字にする</div>
+        <div class="box">
+          <div class="watashi" id="my-num"></div>
+          <div class="aite" id="your-num"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="step">おなじかずをけす</div>
+        <div class="box">
+          <div class="watashi" id="my-del"></div>
+          <div class="aite" id="your-del"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="step">ごうけい</div>
+        <div class="box">
+          <div class="watashi" id="my-sum"></div>
+          <div class="aite" id="your-sum"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="step">けっか</div>
+        <div class="box">
+          <div class="watashi" id="my-result"></div>
+          <div class="aite" id="your-result"></div>
+        </div>
+      </div>
+    </section>
+  </article>
+  <footer>
+    <a href="https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%8D%E3%81%99%E3%81%A8%E3%81%9C%E3%81%AD%E3%81%93">あきすとぜねこ （Wikipedia）</a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+:root {
+  --first-color: #ecfffb;
+--second-color: #b4f1f1;
+--third-color: #2d767f;
+--fourth-color: #1e6262;
+--primary-text-color: #212121;
+--secondary-text-color: #757575;
+--divider-color: #BDBDBD;
+--icon-color: #000000;
+
+}
+
+html {
+  font-size : 62.5%;
+  max-width: 700px;
+  margin: auto;
+  background-color: var(--first-color);
+  color: var(--primary-text-color);
+ }
+
+ footer {
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 3rem 0rem 3rem 0rem;
+ }
+
+ .title {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: 10rem 0rem 0rem 0rem;
+ }
+
+ div {
+  font-size: 2rem;
+ }
+
+ p {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0rem 0rem 3rem 0rem;
+ }
+
+ .subtitle {
+  color: var(--secondary-text-color);
+  font-size: 2rem;
+  text-align: right;
+  padding: 0rem 0rem 6rem 0rem;
+ }
+
+ input {
+  margin: 1px 0px 1px 0px;
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  background-color: var(--first-color);
+ }
+
+ span {
+  font-size: 3rem;
+ }
+
+ .table {
+  background-color: var(--third-color);
+  color: white;
+  padding: 2rem 2rem 2rem 2rem;
+  text-align: center;
+ }
+
+
+ .container {
+  background-color: var(--second-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  min-height: 7rem;
+  border-bottom:1px solid var(--third-color);
+ }
+
+ .step {
+  font-size: 2rem;
+  display: flex;
+  flex-basis: 30%;
+  padding: 2rem 2rem 2rem 2rem;
+  align-self: center;
+ }
+
+ .kaisetu {
+  padding: 0rem 0rem 7rem 0rem;
+ }
+
+ .box {
+  flex-wrap: wrap;
+  display: flex;
+  flex-basis: 100%;
+  align-self: center;
+  align-content: flex-start;
+  justify-content: space-around;
+
+ }
+
+ .box > div {
+  font-size: 2rem;
+  text-align: content;
+
+ }
+
+ .bg2 {
+  background-color: var(--second-color);
+ }
+
+ .head {
+  align-self: center;
+  font-size: 4rem;
+ }
+
+
+@media screen and (max-width: 600px) {
+  
+  .box > .watashi::before {
+    content: "わたし: ";
+  }
+  
+  .box > .aite::before {
+    content:"あいて: ";
+  }
+
+  .inv {
+    display: none;
+  } 
+}
