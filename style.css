@@ -17,6 +17,7 @@ html {
   font-size : 62.5%;
   max-width: 700px;
   margin: auto;
+  padding: 0rem 2rem;
   background-color: var(--first-color);
   color: var(--primary-text-color);
  }
@@ -103,8 +104,10 @@ html {
  }
 
  .box > div {
+  text-align: center;
   font-size: 2rem;
   text-align: content;
+  flex-basis: 50%;
 
  }
 
@@ -118,14 +121,24 @@ html {
  }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   
+  .box {
+    justify-content: flex-start;
+  }
+
   .box > .watashi::before {
     content: "わたし: ";
   }
   
   .box > .aite::before {
     content:"あいて: ";
+  }
+
+  .box > div {
+    padding: 0rem 0rem 0rem 2rem;
+    text-align: left;
+    flex-basis: auto;
   }
 
   .inv {
